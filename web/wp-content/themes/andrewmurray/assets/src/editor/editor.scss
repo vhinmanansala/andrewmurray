@@ -1,0 +1,35 @@
+/**
+ * Editor.
+ */
+
+/**
+ * Overrides.
+ */
+@import "../theme/scss/bootstrap";
+@import "../theme/scss/variables";
+
+/**
+ * Parent theme SCSS.
+ */
+@import "../../../../boylen-plus/assets/src/editor/editor";
+
+/**
+ * Child theme.
+ */
+@import "../theme/scss/mixins";
+@import "~bootstrap/scss/buttons";
+
+.editor-block-list__layout {
+	font-family: $font-family-sans-serif;
+
+	@import "../theme/global";
+}
+
+@import "../theme/global"; // stylelint-disable-line
+@import "../theme/components";
+@import "../theme/blocks";
+
+/**
+ * Overrides.
+ */
+@import "overrides";

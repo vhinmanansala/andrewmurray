@@ -1,0 +1,19 @@
+.footer {
+	background: #414042;
+	color: #ffffff;
+	margin-top: 0px;
+
+	a {
+		color: #ffffff;
+	}
+
+	.chat {
+		background: url("../../assets/images/chat.png") no-repeat center scroll transparent;
+		background-size: 100%;
+		display: inline-block;
+		height: 45px;
+		margin-left: 25px;
+		vertical-align: middle;
+		width: 45px;
+	}
+}

@@ -1,0 +1,4 @@
+node_modules
+dist
+vendor
+web/wp-content/mu-plugins/*

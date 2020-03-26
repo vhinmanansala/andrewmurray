@@ -1,0 +1,40 @@
+/**
+ * Main SCSS File.
+ */
+
+/**
+ * Overrides.
+ */
+@import "scss/bootstrap";
+@import "scss/variables";
+
+/**
+ * Parent theme SCSS.
+ */
+@import "../../../../boylen-plus/assets/src/theme/theme";
+
+
+/**
+ * Bootstrap modules.
+ */
+@import "~bootstrap/scss/modal";
+
+/**
+ * SCSS.
+ */
+@import "scss/css-variables";
+@import "scss/mixins";
+
+/**
+ * Partials.
+ */
+@import "global";
+@import "blocks";
+@import "components";
+
+@import "parts/header";
+@import "parts/footer";
+
+@import "pages/home";
+
+@import "lightslider/src/css/lightslider";

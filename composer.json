@@ -1,0 +1,106 @@
+{
+  "name": "boylen/andrewmurray",
+  "description": "Custom website for Andrew Murray.",
+  "repositories":[
+    {
+      "type":"composer",
+      "url":"https://wpackagist.org"
+    },
+    {
+      "type":"vcs",
+      "url":"https://github.com/junaidbhura/composer-wp-pro-plugins"
+    },
+    {
+      "type":"vcs",
+      "url":"https://github.com/junaidbhura/gumponents"
+    },
+    {
+      "type":"vcs",
+      "url":"git@github.com:BoylenStaff/boylen-plus.git"
+    },
+    {
+      "type":"vcs",
+      "url":"git@github.com:BoylenStaff/bn-blocks.git"
+    },
+    {
+      "type":"vcs",
+      "url":"git@github.com:BoylenStaff/bn-breadcrumbs.git"
+    },
+    {
+      "type":"vcs",
+      "url":"git@github.com:BoylenStaff/bn-core.git"
+    },
+    {
+      "type":"vcs",
+      "url":"git@github.com:BoylenStaff/bn-seo.git"
+    },
+    {
+      "type":"vcs",
+      "url":"git@github.com:BoylenStaff/updraft-plus.git"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "junaidbhura/advanced-custom-fields-pro",
+        "version": "5.8.4",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://www.advancedcustomfields.com"
+        },
+        "require": {
+          "junaidbhura/composer-wp-pro-plugins": "*"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "junaidbhura/gravityforms",
+        "version": "2.4.11",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://www.gravityforms.com"
+        },
+        "require": {
+          "junaidbhura/composer-wp-pro-plugins": "*"
+        }
+      }
+    }
+  ],
+  "extra": {
+    "installer-paths": {
+      "web/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin", "junaidbhura/gumponents", "junaidbhura/advanced-custom-fields-pro"],
+      "web/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "web/wp"
+  },
+  "require": {
+    "php": ">=7.1",
+    "roots/wordpress": "5.3.2",
+    "composer/installers": "^1.4",
+    "vlucas/phpdotenv": "^3.0.0",
+    "oscarotero/env": "^1.1.0",
+    "roots/wp-config": "1.0.0",
+    "boylenstaff/boylen-plus": "1.0.14",
+    "boylenstaff/bn-blocks": "1.0.14",
+    "boylenstaff/bn-breadcrumbs": "1.0.1",
+    "boylenstaff/bn-core": "1.0.2",
+    "boylenstaff/bn-seo": "1.0.0",
+    "junaidbhura/gumponents": "0.4.0",
+    "junaidbhura/advanced-custom-fields-pro": "*",
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/duracelltomi-google-tag-manager": "*",
+    "wpackagist-plugin/redirection": "*"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "*",
+    "wp-coding-standards/wpcs": "*"
+  },
+  "scripts": {
+    "lint-php": "phpcs"
+  }
+}
+

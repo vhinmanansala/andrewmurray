@@ -1,0 +1,16 @@
+/**
+ * Overrides.
+ */
+
+dd,
+li {
+	margin-bottom: inherit;
+}
+
+@for $i from 1 through 6 {
+
+	.wp-block-heading h#{ $i } {
+
+		@extend h#{ $i };
+	}
+}

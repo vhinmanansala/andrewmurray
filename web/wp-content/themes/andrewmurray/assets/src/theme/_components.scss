@@ -1,0 +1,50 @@
+/**
+ * Components.
+ */
+
+.featured-content-container {
+	position: relative;
+
+	.featured-content {
+		bottom: 0;
+		color: #ffffff;
+		left: 0;
+		padding: 20px;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+.lSSlideOuter {
+	position: relative !important;
+	overflow: visible !important;
+
+	.lSSlideWrapper {
+		position: static;
+
+		.lSAction {
+			span {
+				display: inline-block;
+				height: 29px;
+				width: 17px;
+			}
+
+			.lSPrev {
+				left: -40px;
+			}
+
+			.lSNext {
+				right: -50px;
+			}
+
+			span.prev {
+				background: url("../../assets/images/previous.png") no-repeat 0 0 scroll transparent;
+			}
+
+			span.next {
+				background: url("../../assets/images/next.png") no-repeat 0 0 scroll transparent;
+			}
+		}
+	}
+}

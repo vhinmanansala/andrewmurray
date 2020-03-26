@@ -1,0 +1,95 @@
+#homepage-banner {
+	margin-bottom: 0px !important;
+	padding-top: 260px !important;
+
+	#banner-content-container {
+		margin-bottom: 160px;
+	}
+}
+
+#feature-content-container .wrap {
+	color: #ffffff;
+
+	div.wp-block-column {
+		background: #8874b5;
+		padding: 25px;
+		margin: 0 !important;
+
+		&:first-child {
+			border-radius: 10px 0 0 10px;
+		}
+
+		&:last-child {
+			border-radius: 0 10px 10px 0;
+		}
+
+		&:nth-child(2) {
+			background: #414042;
+		}
+
+		.has-medium-font-size {
+			font-size: 24px;
+		}
+
+		.wp-block-image {
+			min-height: 70px;
+		}
+	}
+}
+
+#our-services-container {
+	background: #F7F7F7;
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+	padding-bottom: 6.250rem;
+}
+
+#meet-our-team-container {
+	background: #8874b5;
+	color: #ffffff;
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+
+	.wp-block-media-text__content {
+		padding-left: 23.5rem;
+	}
+}
+
+#call-to-action-container.section {
+	mix-blend-mode: multiply;
+	opacity: 1;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding-bottom: 60px;
+	padding-top: 60px;
+}
+
+.white-outlined-button .wp-block-button__link {
+	background: none !important;
+	border-color: #ffffff !important;
+	color: #ffffff !important;
+	border-radius: 90px !important;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+
+.purple-filled-button .wp-block-button__link {
+	background: #8874b5 !important;
+	border-color: #8874b5 !important;
+	color: #ffffff !important;
+	border-radius: 90px !important;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+
+#contact-info-section {
+	margin-bottom: 0px;
+
+	.bn-contact-map__details {
+		background: url("../../assets/images/contact-info-background.png") no-repeat center scroll transparent;
+		background-size: cover;
+		color: #ffffff;
+		padding-bottom: 80px;
+		padding-top: 80px;
+	}
+}

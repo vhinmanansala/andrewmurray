@@ -1,0 +1,50 @@
+# --- Windows and Mac files
+[Tt]humbs.db
+.DS_Store
+
+# --- Packages
+node_modules
+vendor
+
+# --- Root
+/*
+!.circleci
+!.eslintignore
+!.eslintrc.json
+!.browserslistrc
+!.editorconfig
+!.gitignore
+!.gitmodules
+!.tests
+!.env.sample
+!composer.json
+!composer.lock
+!package.json
+!package-lock.json
+!phpcs.xml
+!phpunit.xml
+!.stylelintrc
+!.stylelintignore
+!config/
+!web/
+!webpack.config.js
+!wp-cli.yml
+!README.md
+
+# --- WordPress
+web/*
+!wp-content/
+!web/index.php
+!web/wp-config.php
+
+# --- WP Content
+web/wp-content/*
+!web/wp-content/themes/
+!web/wp-content/mu-plugins/
+
+web/wp-content/mu-plugins/*
+!web/wp-content/mu-plugins/loader.php
+
+web/wp-content/themes/*
+!web/wp-content/themes/andrewmurray/
+web/wp-content/themes/andrewmurray/assets/dist/
