@@ -20,6 +20,7 @@ function am_enqueue_scripts() {
 	// Enqueue CSS.
 	wp_dequeue_style( 'boylen-plus' );
 	wp_enqueue_style( 'andrewmurray', get_stylesheet_directory_uri() . '/assets/dist/theme.css', null, '1', 'all' );
+	wp_enqueue_style( 'quicksand', 'https://fonts.googleapis.com/css?family=Quicksand&display=swap', null, '1', 'all' );
 
 	// Enqueue JavaScript.
 	wp_dequeue_script( 'boylen-plus' );
