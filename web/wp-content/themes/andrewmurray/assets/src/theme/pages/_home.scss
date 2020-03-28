@@ -21,14 +21,26 @@
 
 		&:first-child {
 			border-radius: 10px 0 0 10px;
+
+			@media (max-width: 768px) {
+				border-radius: 10px 10px 0 0;
+			}
 		}
 
 		&:last-child {
 			border-radius: 0 10px 10px 0;
+
+			@media (max-width: 768px) {
+				border-radius: 0 0 10px 10px;
+			}
 		}
 
 		&:nth-child(2) {
 			background: #414042;
+		}
+
+		@media (max-width: 768px) {
+			flex-basis: 100%;
 		}
 
 		.has-medium-font-size {
@@ -56,6 +68,26 @@
 
 	.wp-block-media-text__content {
 		padding-left: 23.5rem;
+
+		@media (max-width: 1024px) {
+			padding-left: 8%;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.wp-block-media-text {
+			grid-template-columns: 100% 1fr;
+		}
+
+		.wp-block-media-text__media {
+			grid-column: 1;
+			grid-row: 2;
+		}
+
+		.wp-block-media-text__content {
+			padding-bottom: 30px;
+			padding-top: 30px;
+		}
 	}
 }
 
@@ -67,28 +99,20 @@
 	padding-bottom: 60px;
 	padding-top: 60px;
 
+	@media (max-width: 768px) {
+		padding-left: 8%;
+		padding-right: 8%;
+		
+		.bn-section__background-image {
+			object-position: left;
+		}
+	}
+
 	h1 {
 		margin-top: 0px;
 	}
 }
 
-.white-outlined-button .wp-block-button__link {
-	background: none !important;
-	border-color: #ffffff !important;
-	color: #ffffff !important;
-	border-radius: 90px !important;
-	padding-left: 15px !important;
-	padding-right: 15px !important;
-}
-
-.purple-filled-button .wp-block-button__link {
-	background: #8874b5 !important;
-	border-color: #8874b5 !important;
-	color: #ffffff !important;
-	border-radius: 90px !important;
-	padding-left: 15px !important;
-	padding-right: 15px !important;
-}
 
 #contact-info-section {
 	margin-bottom: 0px;

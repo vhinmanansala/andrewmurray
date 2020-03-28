@@ -19,7 +19,16 @@ $(document).ready(function() {
 		loop: true,
 		pager: false,
 		prevHtml: "<span class='prev'></span>",
-		nextHtml: "<span class='next'></span>"
+		nextHtml: "<span class='next'></span>",
+		speed: 600,
+		responsive : [
+            {
+                breakpoint:768,
+                settings: {
+                    item: 1,
+              	}
+            },
+        ]
 	});
 
 	$('.search-icon').click(function() {
@@ -36,5 +45,22 @@ $(document).ready(function() {
 		} else {
 			$('#header-container').removeClass('sticky');
 		} 
+	});
+
+	$('.mobile .arrow-icon').click(function() {
+	    /*define what element will be toggling display*/
+	    $(this).closest('li').find('.sub-menu').slideDown();
+	    $(this).closest('li').siblings().find('.sub-menu').slideUp();
+
+	    $(this).addClass('active');
+	    $(this).closest('li').siblings().find('span').removeClass('active');
+ 	 });
+
+	$('.menu-icon').click(function() {
+		$('#mobile-menu-container').fadeIn();
+	});
+
+	$('.close-menu').click(function() {
+		$('#mobile-menu-container').fadeOut();
 	});
 });

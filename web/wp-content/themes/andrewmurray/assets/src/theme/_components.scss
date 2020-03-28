@@ -14,11 +14,23 @@
 		text-align: center;
 		width: 100%;
 	}
+
+	@media (max-width: 768px) {
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
 }
 
 .lSSlideOuter {
 	position: relative !important;
 	overflow: visible !important;
+
+	@media (max-width: 768px) {
+		margin: 0 auto;
+		width: 80%;
+	}
 
 	.lSSlideWrapper {
 		position: static;

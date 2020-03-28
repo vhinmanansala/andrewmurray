@@ -14,6 +14,16 @@
 }
 
 #header-container {
+	.mobile {
+		text-align: center;
+
+		img {
+			max-width: 200px;
+		}
+	}
+}
+
+#header-container {
 	left: 0;
 	position: fixed;
 	right: 0;
@@ -57,6 +67,10 @@
 
 					&:hover {
 						text-decoration: none;
+					}
+
+					@media (max-width: 1024px) {
+						padding: 10px 20px;
 					}
 				}
 			}
@@ -146,5 +160,118 @@
 		        }
 		    }
         }
+	}
+}
+
+#mobile-menu-container {
+	background: #8077B8;
+	display: none;
+	height: 100%;
+	overflow: scroll;
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+	.close-menu {
+		background: url("../../assets/images/close.png") no-repeat 0 0 scroll transparent;
+		cursor: pointer;
+		display: inline-block;
+		height: 21px;
+		position: absolute;
+		right: 30px;
+		top: 30px;
+		width: 21px;
+	}
+
+	.menu {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+
+		li {
+			margin-bottom: 5px;
+		}
+
+		> li > .sub-menu {
+			margin: 0px;
+			padding: 0px;
+
+			> li {
+				span.arrow-icon {
+					display: inline-block;
+					height: 24px;
+					margin-right: 15px;
+					vertical-align: middle;
+					width: 24px;
+				}
+
+				> ul {
+					margin-left: 40px;
+				}
+			}
+		}
+
+		> li > .sub-menu > li.menu-item-has-children {
+			position: relative;
+
+			span.arrow-icon.active {
+				background: url("../../assets/images/up.png") no-repeat 0 0 scroll transparent;
+				transition-duration: .3s;
+			}
+
+			span.arrow-icon {
+				background: url("../../assets/images/down.png") no-repeat 0 0 scroll transparent;
+				content: "";
+				cursor: pointer;
+				transition-duration: .3s;
+			}
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		.sub-menu .sub-menu {
+			display: none;
+		}
+
+		a {
+			color: #ffffff;
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+#mobile-search-container {
+	input[type='text'] {
+		background: url("../../assets/images/search.png") no-repeat right 15px center scroll transparent;
+		background-size: 20px;
+		border: 1px solid #ffffff;
+		border-radius: 30px;
+		color: #ffffff;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		outline: none;
+		padding: 5px 45px 5px 15px;;
+		width: 100%;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+		color: #ffffff;
+		opacity: 1; /* Firefox */
+	}
+
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  		color: #ffffff;
+	}
+
+	::-ms-input-placeholder { /* Microsoft Edge */
+  		color: #ffffff;
 	}
 }

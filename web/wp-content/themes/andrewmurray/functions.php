@@ -10,6 +10,19 @@ require_once 'inc/functions-admin.php';
 require_once 'inc/functions-frontend.php';
 require_once 'assets/src/blocks/content-thumbnail-slider/index.php';
 
+function ngstyle_child_menu_items($item_output, $item, $depth, $args)
+{
+    if ($args->theme_location != 'main' || $depth !== 1) {
+        return $item_output;
+    }
+
+    $element  = '<span class="arrow-icon"></span>';
+    $element .= $item_output;
+
+    return $element;
+}
+add_filter('walker_nav_menu_start_el', 'ngstyle_child_menu_items', 10, 4);
+
 class WPSE_78121_Sublevel_Walker extends Walker_Nav_Menu
 {
     function start_lvl( &$output, $depth = 0, $args = array() ) {

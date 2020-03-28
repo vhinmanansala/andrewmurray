@@ -7,13 +7,17 @@
 	text-align: right;
 }
 
-body {
+body.page {
 	font-family: 'Quicksand', sans-serif !important;
-	font-size: 14px !important;
+	font-size: 16px !important;
 	overflow-x: hidden;
 
 	h1, h2, h3, h4, h5, h6, p, span, input, em, b, a {
 		font-family: 'Quicksand', sans-serif !important;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: bold;
 	}
 
 	h1 {
@@ -41,7 +45,23 @@ body {
 	}
 
 	.main {
-		min-height: 500px;
+		min-height: 750px;
+	}
+
+	@media (max-width: 768px) {
+		.desktop {
+			display: none;
+		}
+
+		.mobile {
+			display: block;
+		}
+	}
+
+	@media (min-width: 769px) {
+		.mobile {
+			display: none;
+		}
 	}
 }
 
@@ -54,6 +74,17 @@ span.search-icon {
 	position: relative;
 	top: 10px;
 	width: 27px;
+}
+
+span.menu-icon {
+	background: url("../../assets/images/menu.png") no-repeat 0 0 scroll transparent;
+	cursor: pointer;
+	display: inline-block;
+	height: 16px;
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	width: 26px;
 }
 
 #search-modal-container {
@@ -122,4 +153,22 @@ span.search-icon {
 	  		color: #ffffff;
 		}
 	}
+}
+
+.white-outlined-button .wp-block-button__link {
+	background: none !important;
+	border-color: #ffffff !important;
+	color: #ffffff !important;
+	border-radius: 90px !important;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+
+.purple-filled-button .wp-block-button__link {
+	background: #8874b5 !important;
+	border-color: #8874b5 !important;
+	color: #ffffff !important;
+	border-radius: 90px !important;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
 }
