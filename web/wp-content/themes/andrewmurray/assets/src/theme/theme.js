@@ -29,4 +29,12 @@ $(document).ready(function() {
 	$('.close-search').click(function() {
 		$('#search-modal-container').fadeOut();
 	});
+
+	$(window).scroll(function() {
+		if ($(window).scrollTop() > 110) {
+			$('#header-container').addClass('sticky');
+		} else {
+			$('#header-container').removeClass('sticky');
+		} 
+	});
 });

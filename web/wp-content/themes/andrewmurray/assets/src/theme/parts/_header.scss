@@ -1,8 +1,24 @@
+#header-container.sticky {
+	background: #8077B8;
+	transition-duration: .3s;
+
+	img {
+		max-width: 175px;
+		transition-duration: .3s;
+	}
+
+	#menu-container #menu-main-menu li {
+		padding-top: 15px;
+		transition-duration: .3s;
+	}
+}
+
 #header-container {
 	left: 0;
-	position: absolute;
+	position: fixed;
 	right: 0;
 	top: 0;
+	transition-duration: .3s;
 	width: 100%;
 	z-index: 999999; 
 
@@ -12,6 +28,7 @@
 
 	img {
 		max-width: 250px;
+		transition-duration: .3s;
 	}
 
 	#menu-container {
