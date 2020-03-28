@@ -22,8 +22,11 @@
 			</div>
 
 			<div id="menu-container" class="col-md-8">
-				<?php wp_nav_menu(['theme_location' => 'main', 'walker' => new WPSE_78121_Sublevel_Walker]); ?>
+				<?php wp_nav_menu(['theme_location' => 'main', 'walker' => new WPSE_78121_Sublevel_Walker, 'container' => false]); ?>
+				<span class="search-icon"></span>
 			</div>
 		</div>
 	</div> <!-- .wrap -->
 </header> <!-- .header -->
+
+<?php get_search_form(); ?>

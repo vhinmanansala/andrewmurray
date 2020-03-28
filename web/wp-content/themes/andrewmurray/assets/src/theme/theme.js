@@ -21,4 +21,12 @@ $(document).ready(function() {
 		prevHtml: "<span class='prev'></span>",
 		nextHtml: "<span class='next'></span>"
 	});
+
+	$('.search-icon').click(function() {
+		$('#search-modal-container').fadeIn();
+	});
+
+	$('.close-search').click(function() {
+		$('#search-modal-container').fadeOut();
+	});
 });
