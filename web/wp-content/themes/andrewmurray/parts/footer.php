@@ -10,7 +10,7 @@
 	<div class="wrap">
 		<div class="row">
 			<div class="col-md-6">
-				Copyright &copy; <?php echo esc_html( date( 'Y' ) ); ?>  <?php echo bloginfo('site_url'); ?>. All Rights Resereved
+				<p>Copyright &copy; <?php echo esc_html( date( 'Y' ) ); ?>  <?php echo bloginfo('site_url'); ?>. All Rights Reserved</p>
 			</div>
 
 			<div class="col-md-6 text-right">
